@@ -1,0 +1,17 @@
+[package]
+name = "rust-kafka-example"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "producer"
+path = "src/producer.rs"
+
+[[bin]]
+name = "consumer"
+path = "src/consumer.rs"
+
+[dependencies]
+rdkafka = { version = "0.36.2", features = ["cmake-build"] }
+tokio = { version = "1.40.0", features = ["full"] }
+uuid = { version = "1.10.0", features = ["v4"] }
