@@ -14,4 +14,3 @@ path = "src/consumer.rs"
 [dependencies]
 rdkafka = { version = "0.36.2", features = ["cmake-build"] }
 tokio = { version = "1.40.0", features = ["full"] }
-uuid = { version = "1.10.0", features = ["v4"] }
